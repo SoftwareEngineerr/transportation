@@ -5014,3 +5014,7 @@ img.signature {
 #header{
     height: 900px;
 }
+
+.block-layout{
+    max-width: 100%;
+}
