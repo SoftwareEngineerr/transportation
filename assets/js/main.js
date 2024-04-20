@@ -409,3 +409,15 @@ $(document).ready(function() {
     });
 
 });
+
+
+iframe.onload = function() {
+    var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+    var styleElement = iframeDocument.createElement('style');
+    styleElement.textContent = `
+    .block-layout {
+        max-wdith: 100% !important;
+    }
+    `;
+    iframeDocument.head.appendChild(styleElement);
+};
